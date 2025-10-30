@@ -1,0 +1,105 @@
+/* General Page Setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0ebff 0%, #ffffff 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Central Container */
+#container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2, h3 {
+  color: #1e293b;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+/* Inputs and Buttons */
+input, button {
+  padding: 10px;
+  margin: 6px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 15px;
+}
+
+input:focus {
+  border-color: #0078ff;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  background-color: #0078ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+/* Login / Register Section */
+#login-section, #register-section {
+  text-align: center;
+}
+
+#login-section input, #register-section input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+#login-section button, #register-section button {
+  width: 50%;
+}
+
+/* Dashboard Styling */
+#dashboard h3 {
+  margin-top: 25px;
+}
+
+/* Event and Swap Cards */
+.event-card, .swap-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #f8fafc;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.event-card button, .swap-card button {
+  margin-right: 10px;
+}
+
+/* Message Display */
+#message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Create Event Section */
+#create-event-section {
+  margin-top: 20px;
+  border-top: 2px solid #eee;
+  padding-top: 15px;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}

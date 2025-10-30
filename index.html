@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlotSwapper</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h1>SlotSwapper</h1>
+
+    <!-- AUTH SECTION -->
+    <!-- AUTH SECTION -->
+<div id="auth-section">
+  <h2>Signup</h2>
+  <input id="signup-name" placeholder="Name" /><br />
+  <input id="signup-email" placeholder="Email" /><br />
+  <input id="signup-password" placeholder="Password" type="password" /><br />
+  <button onclick="signup()">Signup</button>
+
+  <h2>Login</h2>
+  <input id="login-email" placeholder="Email" /><br />
+  <input id="login-password" placeholder="Password" type="password" /><br />
+  <button onclick="login()">Login</button>
+</div>
+
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" style="display:none;">
+      <button onclick="logout()">Logout</button>
+      <h2>Create Event</h2>
+      <input id="title" placeholder="Title" /><br />
+      <input id="start" type="datetime-local" /><br />
+      <input id="end" type="datetime-local" /><br />
+      <button onclick="createMyEvent()">Create Event</button>
+
+
+      <h3>My Events</h3>
+      <div id="my-events"></div>
+
+      <h3>Swappable Events (Others)</h3>
+      <div id="swappable-events"></div>
+      </div>
+      <h3>Incoming Swap Requests</h3>
+      <div id="incoming-requests"></div>
+
+      <h3>Outgoing Swap Requests</h3>
+      <div id="outgoing-requests"></div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
